@@ -43,7 +43,7 @@ def get_coordinates(file_name: str = "nn.txt"):
     return coordinates, n
 
 def main():
-    coordinates, n = get_coordinates("nn_small.txt")
+    coordinates, n = get_coordinates()
     A = compute_dist(coordinates, n)
     return tsp_approx(A, n) 
 
